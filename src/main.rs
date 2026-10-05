@@ -1,3 +1,4 @@
+cat > src/main.rs << 'EOF'
 use std::io::{self, Write};
 
 fn main() {
@@ -5,4 +6,4 @@ fn main() {
     io::stdout().flush().unwrap();
     std::thread::sleep(std::time::Duration::from_millis(200));
 }
-
+EOF
